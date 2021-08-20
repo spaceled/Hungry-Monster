@@ -12,20 +12,27 @@
     <!-- https://www.themealdb.com/api.php -->
     <div class="main">
         <div class="container">
-            <div class="header">
-                <img src="images/logo.png" alt="">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="search" id="searchId">
-
+            <div class="header d-flex justify-content-between mt-5">
+                <div class="left-header">
+                    <img src="images/logo.png" alt="">
                 </div>
-                <div class="showImage" id="imageContainer">
-
+                <div class="right-header">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">Home</li>
+                        <li class="list-inline-item">About</li>
+                        <li class="list-inline-item">Recipes</li>
+                        <li class="list-inline-item">Blog</li>
+                    </ul>
                 </div>
+            </div>               
+            <div class="col-4 search mx-auto mt-5" >
+                <div class="input-group input-group-lg">
+                    <input id="search-value" class="form-control" placeholder="Search for Meal...">
+                    <button class="input-group-text" id="search-button">Search</button>
+                </div>
+            </div>
+            <div class="showImage" id="imageContainer">
+
             </div>
         </div>
     </div>
