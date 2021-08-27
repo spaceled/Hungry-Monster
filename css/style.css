@@ -16,8 +16,12 @@
 .cardDisplay {
     border-radius: 5px;
     background-color: #f8f7f5;
-    width: 300px;
+    width: 80%;
     padding: 20px;
     text-align: center;
+}
+.cardDisplay img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 

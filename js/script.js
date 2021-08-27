@@ -1,3 +1,10 @@
+
+document.getElementById('search-button').addEventListener('click', function() {
+    const searchValue = document.getElementById('search-value').value;
+    console.log(searchValue);
+});
+
+
 fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
 .then(response => response.json())
 .then(data => displayRecipe(data))
@@ -5,7 +12,7 @@ fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
 
 const displayRecipe = recipe => {
     const dishesDiv = document.getElementById('show-dishes');
-    console.log(recipe)
+    // console.log(recipe)
     for (const key in recipe) {
         if (Object.hasOwnProperty.call(recipe, key)) {
             const recipeName = recipe[key];
@@ -14,6 +21,7 @@ const displayRecipe = recipe => {
                 recipeDiv.className = 'cardDisplay';
         
                 const recipeInfo = `
+                    <img src="${name.strMealThumb}">
                     <h3>${name.strMeal}</h3>
                 `
                 recipeDiv.innerHTML = recipeInfo;
